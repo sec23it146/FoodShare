@@ -1,12 +1,12 @@
-// Handle form submission
 const form = document.getElementById('donationForm');
-const thankYouMsg = document.getElementById('thankYouMsg');
 
 form.addEventListener('submit', function(e){
     e.preventDefault(); // prevent actual form submission
-    thankYouMsg.style.display = "block"; // show thank you message
-    form.reset(); // reset form
+    alert("Thank you for your donation! ❤️"); // show alert
+    form.reset(); // reset form after alert
 });
+
+
 
 // Smooth Scroll for nav links
 document.querySelectorAll('header nav a').forEach(anchor => {
